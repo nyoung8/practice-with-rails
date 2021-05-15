@@ -1,0 +1,29 @@
+<div class='p-3 mb-2 rounded border border-2 shadow-sm bg-light bg-gradient'>
+
+  <p>
+    <strong>First name:</strong>
+    <%= @friend.first_name %>
+  </p>
+
+  <p>
+    <strong>Last name:</strong>
+    <%= @friend.last_name %>
+  </p>
+
+  <p>
+    <strong>Email:</strong>
+    <%= @friend.email %>
+  </p>
+
+  <p>
+    <strong>Phone:</strong>
+    <%= @friend.phone %>
+  </p>
+
+  <p>
+    <strong>Twitter:</strong>
+    <%= @friend.twitter %>
+  </p>
+</div>
+<%= link_to 'Edit', edit_friend_path(@friend), class:"btn btn-secondary" %> 
+<%= link_to 'Back', friends_path, class:"btn btn-secondary" %>
